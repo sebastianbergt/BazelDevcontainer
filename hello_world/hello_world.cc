@@ -1,9 +1,9 @@
-#include "test.h"
+#include "hello_world.h"
 
 #include <iostream>
 #include <tuple>
 
-void test(int a) {
+void hello_world(int a) {
   std::ignore = a;
   std::cout << "I hear your call.\n";
 }
