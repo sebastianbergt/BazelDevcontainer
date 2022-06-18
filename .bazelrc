@@ -1,0 +1,5 @@
+common --color=yes
+# build --subcommands=pretty_print
+build --verbose_failures
+# build --sandbox_debug
+build --cxxopt="-std=c++14" --cxxopt="-Wall" --cxxopt="-Werror" --cxxopt="-Wextra" --cxxopt="-Wfloat-equal" --cxxopt="-Wpedantic"
