@@ -9,8 +9,7 @@ cc_test(
     name = "hello_world_test",
     srcs = ["hello_world_test.cc"],
     deps = [
-        "@com_github_catchorg_catch2//:catch2",
-        "//third_party/test_utils:catch-main",
-        "//hello_world:hello_world",
+        "@com_github_catchorg_catch2//:catch2_main",
+        "//playground/cpp_hello_world:hello_world",
     ],
 )
