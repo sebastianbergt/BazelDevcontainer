@@ -1,7 +1,11 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install --no-install-recommends vim build-essential git
+     && apt-get -y install --no-install-recommends git vim build-essential git wget
+
+# Clang
+RUN apt-get update && apt-get -y install clang-format clang-tidy clang
+
 # Bazel
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
      && apt-get -y install --no-install-recommends ca-certificates apt-transport-https curl gnupg
